@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Coleta de Dados</title>
+</head>
+<body>
+    <h1>Exemplo de criação de Formulário</h1>
+    <form action="/submit" method="post"><!-- Tag 'form' é um container principal do formulario -->
+        
+    <label for="Nome">Nome:</label><br><!-- Tag 'label' significa etiqueta, utilizado para definir um titulo, uma legenda, 
+    que descreva para que serve cada campo do formulario -->
+    
+    <input type="text" id="Nome" name="Nome"><br> <!-- Tag 'input' campo do formulario, é um comando de entrada.
+        O atributo 'type' é o tipo de de caractere a ser utilizado -->
+    
+    <label for="Email">Email:</label><br> <!-- a tag 'br' serve para quebra de linha -->
+    <input type="text" id="Email" name="Email"><br>
+    
+    <label for="data">Data de Nascimento:</label><br>
+    <input type="date" id="data" name="data"><br>
+    
+    <label for="cor">Cor Favorita:</label><br>
+    <input type="color" id="cor" name="cor"><br>
+    
+    <label for="telefone">Telefone:</label><br>
+    <input type="tel" id="tel" name="tel"><br>
+    
+    <label for="textarea">Area de Texto</label><br>
+    <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea><br><!-- Tag 'textarea' campo do texto, 
+        o atributo 'rows' é o numero de linhas e o atributo 'cols' é o numero de colunas a ser inseridos no campo-->
+    
+    <label for="search">Pesquisa:</label><br>
+    <input type="search" id="search" name="search"><br>
+
+
+    <label for="select">Seleção:</label><br>
+    <select name="select" id="select"><!-- A tag 'select' é um container que contem opções para seleção 
+        por isso a tag 'option' esta inserida dentro dele -->
+        <option value1="value1">Opção 1</option>
+        <option value1="value2">Opção 2</option>
+        <option value1="value3">Opção 3</option>
+    </select><br>
+
+        <label for="radio">Botões de Opções - Radio</label><br> <!--com o Botão de opções 'Radio' só podera ser escolhida uma das opções -->
+        <input type="radio" id="radio" name="radio" value="value1">Opção 1<br>
+        <input type="radio" id="radio" name="radio" value="value2">Opção 2<br>
+        <input type="radio" id="radio" name="radio" value="value3">Opção 3<br>
+
+        <label for="checkbox">Caixa de Seleção</label><br> <!-- com o 'checkbox' poderá ser escolhida uma ou mais opções-->
+        <input type="checkbox" id="checkbox" name="checkbox" value="value1">Opção 1<br>
+        <input type="checkbox" id="checkbox" name="checkbox" value="value2">Opção 2<br>
+        <input type="checkbox" id="checkbox" name="checkbox" value="value3">Opção 3<br>
+
+        <button type="submit"> Enviar</button> <!--a Tag 'Button' campo de botão, permite que uma ação seja executada no    -->
+        <button type="reset"> Limpar Dados</button>
+</form>
+</body>
+</html>
